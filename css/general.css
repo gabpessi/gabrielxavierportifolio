@@ -1,0 +1,46 @@
+/* 
+cores: 
+azul: #38b6ff
+branco: #ffffff
+preto: #000000
+fonte: Poppins
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Poppins", sans-serif;
+    word-wrap: break-word;
+}
+
+html {
+    /* font-size: 10px; */
+  
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+    /* overflow-x: hidden; /*
+  
+    /* Does NOT work on Safari */
+    /* scroll-behavior: smooth; */
+  }
+
+  
+  .container {
+    /* 1140px */
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+  
+    /* margin-bottom: 9.6rem; */
+  }
