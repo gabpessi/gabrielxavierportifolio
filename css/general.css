@@ -183,9 +183,7 @@ html {
         font-size: 1.8rem;
         padding-left: 2rem;
         padding-right: 4rem;
-    }
-
-    
+    }    
 
     .sobre-mim {
         grid-template-columns: 1fr;
@@ -293,11 +291,6 @@ html {
     }
 }
 
-@media screen and (max-width: 700px) { 
-    .flor1-img, .flor2-img {
-        display: none;
-    }
-}
 
 
 @media screen and (max-width: 600px) {
@@ -327,11 +320,26 @@ html {
     }
         
     .titulo-redes {
-        font-size: 3.5rem;
+        font-size: 4.2rem;
+        width: 37rem;
+        padding: 3rem 0;
+
     }
     
-    .redes-sociais-titulo {
-        justify-content: center;
+    
+
+    .flor {
+        width: 10rem;
+    }
+
+    .flor1-img {
+        top: -6%;
+        left: -8.5%;
+    }
+
+    .flor2-img {
+        top: 91%;
+        left: 85%;
     }
 
     .contato-titulo {
@@ -358,10 +366,36 @@ html {
 }
 
 
-@media screen and (max-width: 400px) { 
+@media screen and (max-width: 500px) { 
     .oq-eu-faco-titulo {
         width: 28rem;
         font-size: 2.8rem;
+        top: -5%
+    }
+
+    .flor {
+        width: 8rem;
+    }
+
+    .flor1-img {
+        top: -5%;
+        left: -8.5%;
+    }
+
+    .flor2-img {
+        top: 92%;
+        left: 85%;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) { 
+    
+    .oq-eu-faco-titulo {
+        width: 24rem;
+        font-size: 2.6em;
+        top: -5%
     }
 
     .subsubbox {
@@ -381,7 +415,25 @@ html {
    }
 
    .titulo-redes {
-    font-size: 3rem;
-    padding: 2.5rem 3.5rem;
-   }
+    font-size: 3.5rem;
+    width: 30rem;
+    padding: 2.5rem 0;
+
+}
+
+
+   .flor {
+    width: 8rem;
+}
+
+.flor1-img {
+    top: -4.5%;
+    left: -9.5%;
+}
+
+.flor2-img {
+    top: 92%;
+    left: 82%;
+}
+
 }
