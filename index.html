@@ -5,11 +5,11 @@
     <meta name="viewport" content= "width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/carrossel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -17,7 +17,7 @@
     <main>
     <section class="section-hero">
       <div class="hero">
-        <div class="hero-text-box">
+        <div class="hero-text-box  animated-element slide-left">
           <h1 class="heading-primary">
             <p>Gabriel</p>
             <p class="sobrenome">Xavier</p> 
@@ -32,7 +32,7 @@
                 <picture>                     
                   <img
                     src="img/hero-cut-img.png"
-                    class="hero-img"
+                    class="hero-img  animated-element slide-right" 
                     alt="Woman enjoying food, meals in storage container, and food bowls on a table"
                   />
                 </picture>
@@ -112,12 +112,49 @@
       </div>
       </section>
 
-    
-      
+     
+        <div class="clientes-titulo-div">
+          <h1 class="titulo-redes">Clientes</h1>
+        </div>
+      <section class="clientes">
+        <div class="gallery-wrap">
+        <svg id="backBtn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+        </svg>
+        <div class="gallery">
+          <div>
+            <span><img src="img/CLIENTES/bassetoimoveis3.png"></span>
+            <span><img src="img/CLIENTES/bassetogrupo3.png"></span>
+            <span><img src="img/CLIENTES/rafaelawagner3.png"></span>
+            <span><img src="img/CLIENTES/bgroup3.png"></span>
+          </div>
+          <div>
+            <span><img src="img/CLIENTES/bsurbanismo3.png"></span>
+            <span><img src="img/CLIENTES/ovelhanegra3.png"></span>
+            <span><img src="img/CLIENTES/b1agencia3.png"></span>
+            <span><img src="img/CLIENTES/victor3.png"></span>
+          </div>
+          <div>
+            <span><img src="img/CLIENTES/alicemeyer3.png"></span>
+            <span><img src="img/CLIENTES/mateushulse3.png"></span>
+            <span><img src="img/CLIENTES/soul33.png"></span>
+            <span><img src="img/CLIENTES/invest73.png"></span>
+            
+          </div>
+          
+        </div>
+        
+        <svg id="nextBtn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+        </svg>
+      </div>
+      </section>
+      <img class="arte-clientes" src="./img/arte-clientes.png">
     <section class="slider-section" >
       <div class="redes-sociais-titulo">
         <h1 class="titulo-redes">Redes Sociais</h1>
       </div>
+      
       <img class="arte-redes" src="img/arte-redes-sociais-min.jpg">
 
       <div class="grid-1">
@@ -337,13 +374,13 @@
 
           <!--Slide imagens-->
           <div class="slide first">
-            <img src="./img/BASSETO GRUPO/bassetogrupo1.png" alt="Imagem 1"/>
+            <img src="./img/BASSETO GRUPO/bassetogrupo3.jpg" alt="Imagem 1"/>            
           </div>
           <div class="slide">
             <img src="./img/BASSETO GRUPO/bassetogrupo2.png" alt="Imagem 2"/>
           </div>
           <div class="slide">
-            <img src="./img/BASSETO GRUPO/bassetogrupo2.png" alt="Imagem 3"/>
+            <img src="./img/BASSETO GRUPO/bassetogrupo1.png" alt="Imagem 1"/>
           </div>
           
           <!--Navigation auto-->
@@ -365,36 +402,33 @@
       </div>
     </div>
   </div> 
-  
-
 </section>
-
 
 <section class="imagens">
   <div class="redes-sociais-titulo">
     <h1 class="titulo-redes">Projetos</h1>
   </div>
-  <img class="arte-redes" src="img/arte-projetos-min.jpg">
+  <img class="arte-projetos" src="img/arte-projetos-min.jpg">
 
-<img class="img-projetos" src="./img/ATOS/atos1final-min.jpg">
-<img class="img-projetos" src="./img/ATOS/atos2final-min.jpg">
-<img class="img-projetos" src="./img/ALHO/alho1final-min.jpg">
+<img class="img-projetos animated-element" src="./img/ATOS/atos1final-min.jpg">
+<img class="img-projetos animated-element" src="./img/ATOS/atos2final-min.jpg">
+<img class="img-projetos animated-element" src="./img/ALHO/alho1final-min.jpg">
 <picture>
   <source srcset="img/ALHO/alho2webp.webp" type="image/webp">
   <source srcset="img/ALHO/alho2.jpg" type="image/jpg">
-  <img class="img-projetos" src="img/ALHO/alho2.jpg" alt="Alho-2" style="width: 100%;">
+  <img class="img-projetos animated-element" src="img/ALHO/alho2.jpg" alt="Alho-2" style="width: 100%;">
 </picture>
-<img class="img-projetos" src="./img/PSICÓLOGA/psicologa1-min.jpg">
+<img class="img-projetos animated-element" src="./img/PSICÓLOGA/psicologa1-min.jpg">
 <picture>
   <source srcset="img/PSICÓLOGA/psicologa2webp.webp" type="image/webp">
   <source srcset="img/PSICÓLOGA/psicologa2jpg.jpg" type="image/jpg">
-  <img class="img-projetos" src="img/PSICÓLOGA/psicologa2jpg.jpg" alt="Psciologa-2" style="width: 100%;">
+  <img class="img-projetos animated-element" src="img/PSICÓLOGA/psicologa2jpg.jpg" alt="Psciologa-2" style="width: 100%;">
 </picture>
-<img class="img-projetos" src="./img/PESSI/pessi1.png">
+<img class="img-projetos animated-element" src="./img/PESSI/pessi1.png">
 <picture>
   <source srcset="img/PESSI/pessi2webp.webp" type="image/webp">
   <source srcset="img/PESSI/pessi2jpg.jpg" type="image/jpg">
-  <img class="img-projetos" src="img/PESSI/pessi2jpg.jpg" alt="Pessi-2" style="width: 100%;">
+  <img class="img-projetos animated-element" src="img/PESSI/pessi2jpg.jpg" alt="Pessi-2" style="width: 100%;">
 </picture>
 </section>
 
@@ -412,7 +446,7 @@
       </div>
     </div>
     <div>
-      <img class="arte-contato" src="img/arte-contato-min.jpg">
+      <img class="arte-contato animated-element slide-left" src="img/arte-contato-min.jpg">
     </div>
     
   </div>

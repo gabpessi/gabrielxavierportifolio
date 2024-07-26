@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/carrossel.css">
+  <script defer ></script>
+  
+  <title>Document</title>
+</head>
+<body>
+  <div class="gallery-wrap">
+    <svg id="backBtn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+    </svg>
+    <div class="gallery">
+      <div>
+        <span><img src="img/CLIENTES/bassetoimoveis2.png"></span>
+        <span><img src="img/CLIENTES/bassetogrupo2.png"></span>
+        <span><img src="img/CLIENTES/rafaelawagner2.png"></span>
+        <span><img src="img/CLIENTES/bgroup2.png"></span>
+      </div>
+      <div>
+        <span><img src="img/CLIENTES/bsurbanismo2.png"></span>
+        <span><img src="img/CLIENTES/ovelhanegra2.png"></span>
+        <span><img src="img/CLIENTES/b1agencia2.png"></span>
+        <span><img src="img/CLIENTES/victor2.png"></span>
+      </div>
+      <div>
+        <span><img src="img/CLIENTES/alicemeyer2.png"></span>
+        <span><img src="img/CLIENTES/mateushulse2.png"></span>
+        <span><img src="img/CLIENTES/soul32.png"></span>
+        <span><img src="img/CLIENTES/invest72.png"></span>
+        
+      </div>
+      
+    </div>
+    
+    <svg id="nextBtn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+    </svg>
+  </div>
+
+<script>
+  let scrollContainer = document.querySelector(".gallery");
+let backBtn = document.getElementById("backBtn");
+let nextBtn = document.getElementById("nextBtn");
+
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+    scrollContainer.style.scrollBehavior = "auto";
+});
+
+const scrollAmount = () => {
+    const galleryWidth = scrollContainer.clientWidth;
+    return galleryWidth / 1; // Adjust the scroll amount based on gallery width
+};
+
+nextBtn.addEventListener("click", () => {
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft += scrollAmount();
+});
+
+backBtn.addEventListener("click", () => {
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft -= scrollAmount();
+});
+
+</script>
+  
+  
+</body>
+</html>
