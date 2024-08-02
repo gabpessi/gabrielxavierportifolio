@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
 </head>
 <body>
@@ -23,46 +24,43 @@
             <p class="sobrenome">Xavier</p> 
           </h1>
           <div class="hero-description">
-          <p class="portifolio">
-            PORTIFÓLIO
-          </p>          
+          <button id="botaoscroll" class="portifolio">PORTIFÓLIO</button>      
           </div>  
         </div>         
         <div class="hero-img-box">
                 <picture>                     
                   <img
-                    src="img/hero-cut-img.png"
-                    class="hero-img  animated-element slide-right" 
-                    alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                    src="img/hero-cut-img.jpg"
+                    class="hero-img  animated-element slide-right"                    
                   />
                 </picture>
               </div>
      </section>  
      <section class="section-sobre-mim">
       <div class="sobre-mim">
-      <div class="apresentacao">
+      <div class="apresentacao animated-element fade-in-up">
         Hey!!! <br /> 
         <br />         
-        <p class="primeiro-p"> Me chamo Gabriel, tenho 23 anos e moro
+        <p class="primeiro-p animated-element fade-in-up"> Me chamo Gabriel, tenho 23 anos e moro
         atualmente em <strong> Florianópolis</strong>, na famosa
         Ilha da Magia.</p> 
         <br>
-        <p class="segundo-p"> Sou <strong>designer gráfico</strong> em formação, mas
+        <p class="segundo-p animated-element fade-in-up"> Sou <strong>designer gráfico</strong> em formação, mas
         já trabalho há alguns anos na área,
         principalmente na parte criativa de <strong>redes
         sociais</strong> e <strong>branding.</strong> </p>
         <br>
-        <p class="terceiro-p">Sou apaixonado por criação e pelo meu
+        <p class="terceiro-p animated-element fade-in-up">Sou apaixonado por criação e pelo meu
         trabalho. Atualmente, sou designer na
         holding imobiliária <strong>Basseto Grupo</strong>, pela
         agência B1. </p> 
         <br> 
-        <em>Bora criar juntos?</em>
+        <p class="animated-element fade-in-up"><em>Bora criar juntos?</em></p>
       </div>      
     
     <div class="fotos">
-      <img class="rosto-gab" src="./img/rostogab.png">
-      <img class="deco-sobre-mim" src="./img/deco-sobre-mim.png">
+      <img class="rosto-gab animated-element slide-right" src="./img/rostogab.png">
+      <img class="deco-sobre-mim animated-element slide-right" src="./img/deco-sobre-mim.png">
     </div>
   </div>
      </section>
@@ -84,25 +82,25 @@
             <p>O que eu faço?</p>
           </div>
           <div class="oqfaco-subbox1 subbox">
-            <div class="subsubbox">
+            <div class="subsubbox animated-element fade-in-up">
               <h1 class="oqfaco-title">Branding</h1>
               <h2 class="oqfaco-subtitle">(Identidade visual)</h2>
           </div>
           </div>
           <div class="oqfaco-subbox2 subbox">
-            <div class="subsubbox">
+            <div class="subsubbox animated-element fade-in-up">
               <h1 class="oqfaco-title">Criativos</h1>
               <h2 class="oqfaco-subtitle">(Redes Sociais)</h2>
           </div>
           </div>
           <div class="oqfaco-subbox3 subbox">
-            <div class="subsubbox">
+            <div class="subsubbox animated-element fade-in-up">
               <h1 class="oqfaco-title">Papelaria</h1>
               <h2 class="oqfaco-subtitle">(artigos diversos)</h2>
           </div>
           </div>     
           <div class="oqfaco-subbox4 subbox">
-            <div class="subsubbox">
+            <div class="subsubbox animated-element fade-in-up">
               <h1 class="oqfaco-title">Promocionais</h1>     
                
               
@@ -114,7 +112,7 @@
 
      
         <div class="clientes-titulo-div">
-          <h1 class="titulo-redes">Clientes</h1>
+          <h1 class="titulo-redes animated-element fade-in-up">Clientes</h1>
         </div>
       <section class="clientes">
         <div class="gallery-wrap">
@@ -152,7 +150,7 @@
       <img class="arte-clientes" src="./img/arte-clientes.png">
     <section class="slider-section" >
       <div class="redes-sociais-titulo">
-        <h1 class="titulo-redes">Redes Sociais</h1>
+        <h1 class="titulo-redes animated-element fade-in-up">Redes Sociais</h1>
       </div>
       
       <img class="arte-redes" src="img/arte-redes-sociais-min.jpg">
@@ -160,9 +158,9 @@
       <div class="grid-1">
       
       <!--SLIDER 1-->
-      <div class="title-and-slider">
+      <div class="title-and-slider animated-element fade-in-up" id="inicio-portifolio">
         <a href="https://www.instagram.com/b1agencia/" target="_blank"><h2 class="slides-titulos">@b1agencia</h2></a>
-      <div class="slider slider1">        
+      <div class="slider slider1 ">        
         <div class="slides">
           <!--Radio Button-->  
           <input type="radio" name="radio-btn1" id="radio1.1">
@@ -199,7 +197,7 @@
       </div>
     </div>
       <!--SLIDER 2-->
-      <div class="title-and-slider">
+      <div class="title-and-slider animated-element fade-in-up">
         <a href="https://www.instagram.com/bassetoimoveis/" target="_blank"><h2 class="slides-titulos">@bassetoimoveis</h2></a>
       <div class="slider slider2">
         <div class="slides">
@@ -239,7 +237,7 @@
       </div>
       </div>
       <!--SLIDER 3-->
-      <div class="title-and-slider">
+      <div class="title-and-slider animated-element fade-in-up">
         <a href="https://www.instagram.com/perma.ville/" target="_blank"><h2 class="slides-titulos">@perma.ville</h2></a>
       <div class="slider slider3">
         <div class="slides">
@@ -279,7 +277,7 @@
       </div>
       </div>
       <!--SLIDER 4-->
-      <div class="title-and-slider">
+      <div class="title-and-slider animated-element fade-in-up">
         <a href="https://www.instagram.com/renovaessence_/" target="_blank"><h2 class="slides-titulos">@renovaessence_</h2></a>
       <div class="slider slider4">
         <div class="slides">
@@ -320,7 +318,7 @@
       </div>
       </div>
       <!--SLIDER 5-->
-      <div class="title-and-slider">
+      <div class="title-and-slider animated-element fade-in-up">
         <a href="https://www.instagram.com/leandro.basseto/" target="_blank"><h2 class="slides-titulos">@leandro.basseto</h2></a>
       <div class="slider slider5">
         <div class="slides">
@@ -361,7 +359,7 @@
       </div>
       </div>  
       <!--SLIDER 6-->
-      <div class="title-and-slider">
+      <div class="title-and-slider animated-element fade-in-up">
         <a href="https://www.instagram.com/bassetogrupo/" target="_blank"><h2 class="slides-titulos">@bassetogrupo</h2></a>
       <div class="slider slider6">
         <div class="slides">
@@ -406,7 +404,7 @@
 
 <section class="imagens">
   <div class="redes-sociais-titulo">
-    <h1 class="titulo-redes">Projetos</h1>
+    <h1 class="titulo-redes animated-element fade-in-up">Projetos</h1>
   </div>
   <img class="arte-projetos" src="img/arte-projetos-min.jpg">
 
@@ -446,7 +444,7 @@
       </div>
     </div>
     <div>
-      <img class="arte-contato animated-element slide-left" src="img/arte-contato-min.jpg">
+      <img class="arte-contato animated-element slide-right" src="img/arte-contato-min.jpg">
     </div>
     
   </div>
@@ -456,3 +454,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
