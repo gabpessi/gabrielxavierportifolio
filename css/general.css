@@ -32,8 +32,7 @@ html {
   
   .container {
     /* 1140px */
-    max-width: 192rem;
-    
+    width: 100vw;    
     margin: 0 auto;
   }
   
@@ -43,6 +42,37 @@ html {
     row-gap: 9.6rem;
   
     /* margin-bottom: 9.6rem; */
+  }
+
+
+  @media screen and (min-width: 1450px) { 
+    .flor {
+      width: 25rem;
+    }
+    
+    .flor1-img {
+      top: -18%;
+      left: -8%;
+    }
+    
+    .flor2-img {
+      top: 78%;
+      left: 86%;
+    }
+    
+  
+      .subsubbox {
+        width: 48rem;
+        height: 16rem;
+    }
+  
+    .oqfaco-title {
+        font-size: 5rem;
+    }
+  
+    .oqfaco-subtitle {
+        font-size: 2rem;
+    }
   }
 
   @media screen and (max-width: 1200px) {
@@ -237,7 +267,7 @@ html {
     }
     
     .subsubbox {
-        width: 45rem;
+        width: 35rem;
     }
 
     .oqfaco-subbox1 {
@@ -324,17 +354,14 @@ html {
         width: 37rem;
         padding: 3rem 0;
 
-    }
-    
-    
+    }      
 
     .flor {
         width: 10rem;
     }
 
     .flor1-img {
-        top: -6%;
-        left: -8.5%;
+        display: none;
     }
 
     .flor2-img {
@@ -375,12 +402,7 @@ html {
 
     .flor {
         width: 8rem;
-    }
-
-    .flor1-img {
-        top: -5%;
-        left: -8.5%;
-    }
+    }   
 
     .flor2-img {
         top: 92%;
@@ -426,14 +448,10 @@ html {
     width: 8rem;
 }
 
-.flor1-img {
-    top: -4.5%;
-    left: -9.5%;
-}
-
 .flor2-img {
     top: 92%;
     left: 82%;
 }
 
 }
+
